@@ -18,9 +18,6 @@ public class Main {
         return b;
     }
 
-    void method() {
-
-    }
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -42,7 +39,6 @@ public class Main {
 
         int maxLength = 0;
         while ((count < k) && (!numbersStrList.isEmpty())) {
-//            System.out.println();
             Collections.sort(numbersStrList, Comparator.comparingInt(String::length));
             Collections.reverse(numbersStrList);
             maxLength = numbersStrList.get(0).length();
